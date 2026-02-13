@@ -24,7 +24,7 @@ This extension injects Todoist helpers into Laravel Nightwatch pages.
 2. Enable `Developer mode`.
 3. Click `Load unpacked`.
 4. Select:
-   - `/Users/ohk-mini/dev/nightwatch-chrome-plugin`
+   - `{REPO_ROOT}/nightwatch-chrome-plugin`
 
 ## Configure Todoist token
 
