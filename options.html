@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nightwatch to Todoist Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Nightwatch to Todoist</h1>
+      <p class="hint">
+        Save your Todoist API token to enable duplicate detection on Nightwatch pages.
+      </p>
+
+      <form id="settings-form" novalidate>
+        <label for="todoist-token">Todoist API token</label>
+        <input
+          id="todoist-token"
+          name="todoist-token"
+          type="password"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="Paste token from Todoist settings"
+        />
+
+        <div class="actions">
+          <button type="submit">Save token</button>
+          <button type="button" id="test-connection" class="secondary">Test connection</button>
+        </div>
+
+        <p id="status" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>

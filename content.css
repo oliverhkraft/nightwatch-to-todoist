@@ -1,0 +1,117 @@
+#nightwatch-todoist-root {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+#nightwatch-todoist-root.floating {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  margin: 0;
+  z-index: 2147483646;
+}
+
+#nightwatch-todoist-button {
+  appearance: none;
+  border: 1px solid #b91c1c;
+  border-radius: 8px;
+  background: #ff3b30;
+  color: #ffffff;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+#nightwatch-todoist-button:hover {
+  background: #dc2626;
+}
+
+#nightwatch-todoist-button.is-added {
+  border-color: #166534;
+  background: #22c55e;
+}
+
+#nightwatch-todoist-button.is-added:hover {
+  background: #16a34a;
+}
+
+#nightwatch-todoist-button:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+#nightwatch-todoist-button.is-working {
+  cursor: progress;
+  opacity: 0.9;
+}
+
+#nightwatch-todoist-button:focus-visible {
+  outline: 2px solid #80bdff;
+  outline-offset: 2px;
+}
+
+#nightwatch-todoist-status {
+  color: #111827;
+  background: #ffffff;
+  border: 1px solid #4b5563;
+  border-radius: 7px;
+  padding: 6px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+#nightwatch-todoist-status.state-warning {
+  color: #7a2e0d;
+  background: #fff7e6;
+  border-color: #c15b12;
+}
+
+#nightwatch-todoist-status.state-good {
+  color: #0f5132;
+  background: #e9f9ef;
+  border-color: #1f7a4d;
+}
+
+#nightwatch-todoist-status.state-neutral {
+  color: #111827;
+  background: #f8fafc;
+  border-color: #4b5563;
+}
+
+#nightwatch-todoist-open-existing {
+  color: #0b5ed7;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#nightwatch-todoist-open-existing:hover {
+  text-decoration: underline;
+}
+
+.nightwatch-todoist-badge {
+  margin-left: 8px;
+  appearance: none;
+  border: 1px solid #d0d7de;
+  border-radius: 999px;
+  background: #fff4f1;
+  color: #9f2f22;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.1;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.nightwatch-todoist-badge:hover {
+  background: #ffe7e1;
+}

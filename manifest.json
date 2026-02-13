@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Nightwatch to Todoist",
+  "description": "Injects an Add to Todoist button on Laravel Nightwatch exception and issue detail pages.",
+  "version": "0.2.0",
+  "action": {
+    "default_title": "Nightwatch to Todoist"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.todoist.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
